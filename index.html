@@ -746,7 +746,7 @@ section{ position:relative; }
             </svg>
           </div>
           <p class="hero-text">Orison Hotel welcomes you with enticing accommodations, superb dining and an alluring blend of luxury and exceptional hospitality, in the heart of Owerri.</p>
-          <div class="hero-cta"><a href="#booking" class="btn btn-primary">Check Availability</a></div>
+          <div class="hero-cta"><a href="Book-Now.html#roomSelect" class="btn btn-primary">Check Availability</a></div>
         </div>
       </div>
     </div>
@@ -842,7 +842,7 @@ section{ position:relative; }
         <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
       </select>
     </div>
-    <button type="submit" class="btn btn-primary">Check Availability</button>
+    <button type="submit" class="btn btn-primary"><a href="Book-Now.html#roomSelect">Check Availability</a></button>
     <p class="booking-status" id="bookingStatus" role="status" aria-live="polite"></p>
   </form>
 </div>
@@ -938,7 +938,7 @@ section{ position:relative; }
         <img src="https://images.pexels.com/photos/5103610/pexels-photo-5103610.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Board Room meeting space at Orison Hotel">
         <div class="feature-body"><h3>Board Room</h3><p>Professional setting for productive meetings.</p></div>
       </a>
-      <a class="feature-tile" href="#">
+      <a class="feature-tile" href="Gallery.html">
         <img src="images/Pool side4.jpg" alt="Pool Side at Orison Hotel">
         <div class="feature-body"><h3>Pool Side</h3><p>Relax and unwind in serenity.</p></div>
       </a>
@@ -1182,7 +1182,7 @@ ROOMS.forEach((room, i) => {
       <p class="desc">${room.desc}</p>
       <div class="room-actions">
         <a class="btn btn-outline" href="Accommodation.html#${room.slug}">Details</a>
-        <a class="btn btn-primary" href="${bookHref}"${bookAttrs}>Book Now</a>
+        <a class="btn btn-primary" href="Book-Now.html#roomSelect{bookHref}"${bookAttrs}>Book Now</a>
       </div>
     </div>`;
   roomRail.appendChild(card);
